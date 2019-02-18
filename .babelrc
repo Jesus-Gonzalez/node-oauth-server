@@ -1,0 +1,19 @@
+{
+  "presets": ["env"],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "api": "./src/api",
+        "auth": "./src/server/auth",
+        "graphql": "./src/graphql",
+        "database": "./src/database",
+        "servers": "./src/database"
+
+      }
+    }],
+    ["transform-runtime", {
+      "regenerator": true
+    }]
+  ]
+}
